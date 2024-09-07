@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    font-family: system-ui;
+    color: #ffffff;
+}
+
+.crud
+{
+    width: 80%;
+    margin:  auto;
+}
+.head
+{
+    text-align: center;
+    margin: 20px 0;
+}
+.head h1{
+font-size: 35px;
+margin-bottom: 10px;
+}
+.head p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+input
+{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    border-radius: 5px;
+margin-bottom: 15px ;
+padding: 5px;
+color: white;
+transition: 0.3s;
+}
+
+
+input:focus
+{
+    background-color: black;
+    transform: scale(1.1);
+}
+.count-div input{
+  width: 20%;
+}
+.total
+{
+    background-color: #d50000;
+    padding:0 2px;
+    border-radius: 4px;
+    margin: 10px 5px;
+    
+    text-align: center;
+    height: 30px;
+    display:inline-block ;
+  
+
+}
+button
+{
+    width: 100%;
+    border: 1px solid #5b0080;;
+    padding: 5px ;
+    height: 30px;
+    cursor: pointer;
+    background-color: #5b0080;
+    color: white;
+    transition: 0.3s;
+    border-radius: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.search-Btns-div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-Btns-div button
+{
+    width: 45%;
+}
+button:hover
+{
+    background-color: #752694;
+    
+    border-color: #752694;
+    letter-spacing: 1px;
+}
+.responsive
+{
+    overflow-x: auto;
+}
+table
+{
+    /* text-align: center; */
+    width: 100%;
+    overflow-x:scroll;
+}
+table  button
+{
+   /* width: fit-content; */
+   padding: 4px 8px;
+  margin: auto;
+  
+}
+table button:hover
+{
+    letter-spacing: 0;
+}
+table th{
+    text-transform: uppercase;
+    padding: 0 3px;
+
+    border-right:1px solid #cccc ;
+    border-bottom: 1px solid #cccc;
+    border-top: 1px solid #cccc;
+
+}
+
+table th,table td{
+    padding: 5px 8px;
+    text-align: center;
+   
+}
+table td
+{
+    border-right:1px solid #cccc ;
+    border-bottom: 1px solid #cccc;
+}
+table td:first-child,table th:first-child
+{
+    border-left: 1px solid #cccc;
+}
+
+@media (max-width:767px)
+{
+    .count-div,.search-Btns-div
+    {
+        flex-direction: column;
+    }
+   
+    .count-div input ,input{
+    width: 100%;
+}
+.search-Btns-div button{
+    width: 100%;
+}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+   <div class="crud">
+    <div class="head">
+       <h1>CRUDS</h1>
+        <p>PRODUCT MANAGEMENT SYSTEM</p>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="Product Title" id="title">
+        <div class="count-div">
+            <input onkeyup="getTotalCount()" type="number" id="Price" placeholder="Price">
+            <input type="number"  onkeyup="getTotalCount()" id="Taxes" placeholder="Taxes">
+          
+            <input type="number"  onkeyup="getTotalCount()" id="Ads" placeholder="Ads">
+            <input type="number"  onkeyup="getTotalCount()" id="Discount" placeholder="Discount">
+            <span class="total">Total:</span>
+            </div>
+            <input type="number" id="Count" placeholder="Count">
+            <input type="text" id="Category" placeholder="Category">
+            <button id="CreateBtn">Create</button>
+        </div>
+  
+    <div class="output">
+        <input type="text"  id="Search" placeholder="Search">
+      <div class="search-Btns-div">
+        <button onclick="getSearchMood(this.id)"  id="SearchByTitle">Search By Title</button>
+        <button onclick="getSearchMood( this.id)" id="SearchByCategory">Search By Category</button>
+      </div>
+    </div>
+
+    <div class="delete-div">
+       
+    </div>
+<div class="responsive">
+    
+    <table>
+       
+        <tr>
+           <th>Id</th>
+           <th>Title</th>
+           <th>Price</th>
+           <th>Taxes</th>
+           <th>Ads</th>
+           <th>Discount</th>
+           <th>Total</th>
+           <th>Category</th>
+           <th>Update</th>
+           <th>Delete</th>
+        </tr>
+        <tbody id="table-body">
+       
+    </tbody>
+</table>
+</div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
